@@ -1,6 +1,8 @@
 Codecov Swift Example
 =====================
 
+[![Build Status](https://travis-ci.org/codecov/example-swift.svg)](https://travis-ci.org/codecov/example-swift) [![codecov.io](http://codecov.io/github/codecov/example-swift/coverage.svg?branch=master)](http://codecov.io/github/codecov/example-swift?branch=master)
+
 | [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
 | ----------------------- | ------------- | --------------------- |
 
@@ -33,6 +35,23 @@ env:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+```
+
+# Codecov
+Make sure to specify **Ignore files** in the settings for your repo:
+```
+Pods/.*
+Applications/Xcode.app/.*
+vendor/.*
+Carthage/.*
+build/.*
+.*Tests.m
+.*Tests.swift
+
+# Add the folders containing your unit tests
+# This ensures any test utility classes you create are also ignored
+SwiftExampleTests/.*
+SwiftExampleUITests/.*
 ```
 
 View source and learn more about [Codecov Global Uploader][4]
