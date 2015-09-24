@@ -22,6 +22,19 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
 
+## Private Repos
+> Set `CODECOV_TOKEN` in your environment variables.
+
+Add to your `.travis.yml` file.
+```yml
+env:
+  global:
+    - CODECOV_TOKEN=:uuid-repo-token
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+```
+
 View source and learn more about [Codecov Global Uploader][4]
 
 [1]: https://codecov.io/
