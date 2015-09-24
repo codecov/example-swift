@@ -37,6 +37,23 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
 
+# Codecov
+Make sure to specify **Ignore files** in the settings for your repo:
+```
+Pods/.*
+Applications/Xcode.app/.*
+vendor/.*
+Carthage/.*
+build/.*
+.*Tests.m
+.*Tests.swift
+
+# Add the folders containing your unit tests
+# This ensures any test utility classes you create are also ignored
+SwiftExampleTests/.*
+SwiftExampleUITests/.*
+```
+
 View source and learn more about [Codecov Global Uploader][4]
 
 [1]: https://codecov.io/
