@@ -38,7 +38,7 @@ after_success:
 ```
 
 # Codecov
-Make sure to specify **Ignore files** in the settings for your repo:
+Make sure to specify **Ignore files** in the settings for your repo. You will find a textarea to add these settings in Codecov at `https://codecov.io/gh/OWNER/REPO/features/ignore`
 ```
 Pods/.*
 Applications/Xcode.app/.*
