@@ -19,6 +19,7 @@ class StreakSpec: QuickSpec {
             
             it("should find instance by type/from/to"){
                 
+
             }
             
         }
