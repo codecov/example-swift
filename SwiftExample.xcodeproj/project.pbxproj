@@ -430,8 +430,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExample;
+				PRODUCT_BUNDLE_IDENTIFIER = io.spire.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cb0f7dc0-5ec0-4b75-b144-ecf5f76ddcaa";
 			};
 			name = Debug;
 		};
@@ -441,8 +442,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExample;
+				PRODUCT_BUNDLE_IDENTIFIER = io.spire.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cb0f7dc0-5ec0-4b75-b144-ecf5f76ddcaa";
 			};
 			name = Release;
 		};

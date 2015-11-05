@@ -12,3 +12,8 @@ script: ./test.sh
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+env:
+  global:
+  - secure: OXGdm6fIVOZPqwaaqYEP3thVnq/L0cDh/TJS1aG2sM5rM0wc7dkHnsepfS0zTR8JJ16q4iJnZhVrmpxnOvv2p4lJkufmwS9VG43izmIWy250/7OV19XpVCxrBjH3rEbA3nF1Wq4fxHHljZbObYAZIydW9EmGcv4p9yhcdYNm0nE=
+
