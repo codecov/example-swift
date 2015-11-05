@@ -9,7 +9,7 @@
 import Foundation
 
 public func sayHello() {
-    print("Hello!")
+    print("Hello world!")
 }
 
 public func sayGoodbye() {
