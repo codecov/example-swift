@@ -13,6 +13,8 @@ class StreakSpec: QuickSpec {
     override func spec() {
 
         beforeEach{
+            
+            
         }
         
         describe("Class methods"){
