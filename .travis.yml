@@ -1,11 +1,15 @@
 language: objective-c
 osx_image: xcode7.1
 
+cache:
+- bundler
+
 before_install:
 - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
 - chmod +x ./scripts/travis/setup_carthage.sh
 
 install:
+- bundle install
 - ./scripts/travis/setup_carthage.sh
 
 script: ./test.sh
