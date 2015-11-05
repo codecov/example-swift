@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3482B4001BEB071000B320EA /* StreakSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3482B3FF1BEB071000B320EA /* StreakSpec.swift */; };
+		3482B4031BEB082C00B320EA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3482B4011BEB082C00B320EA /* Nimble.framework */; };
+		3482B4041BEB082C00B320EA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3482B4021BEB082C00B320EA /* Quick.framework */; };
+		3482B4061BEB085800B320EA /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3482B4011BEB082C00B320EA /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3482B4071BEB085800B320EA /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3482B4021BEB082C00B320EA /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BCDBEBF61BB3800800841C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEBF51BB3800800841C20 /* AppDelegate.swift */; };
 		BCDBEBF81BB3800800841C20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEBF71BB3800800841C20 /* ViewController.swift */; };
 		BCDBEBFB1BB3800800841C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDBEBF91BB3800800841C20 /* Main.storyboard */; };
 		BCDBEBFD1BB3800800841C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDBEBFC1BB3800800841C20 /* Assets.xcassets */; };
 		BCDBEC001BB3800800841C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDBEBFE1BB3800800841C20 /* LaunchScreen.storyboard */; };
-		BCDBEC281BB380A300841C20 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC271BB380A300841C20 /* Hello.swift */; settings = {ASSET_TAGS = (); }; };
-		BCDBEC2C1BB3823F00841C20 /* HelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC2B1BB3823F00841C20 /* HelloTests.swift */; settings = {ASSET_TAGS = (); }; };
-		BCFE39A71BB3851C004C9856 /* SwiftExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFE39A61BB3851C004C9856 /* SwiftExampleUITests.swift */; settings = {ASSET_TAGS = (); }; };
+		BCDBEC281BB380A300841C20 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC271BB380A300841C20 /* Hello.swift */; };
+		BCDBEC2C1BB3823F00841C20 /* HelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC2B1BB3823F00841C20 /* HelloTests.swift */; };
+		BCFE39A71BB3851C004C9856 /* SwiftExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFE39A61BB3851C004C9856 /* SwiftExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +39,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3482B4051BEB084E00B320EA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3482B4061BEB085800B320EA /* Nimble.framework in CopyFiles */,
+				3482B4071BEB085800B320EA /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3482B3FF1BEB071000B320EA /* StreakSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreakSpec.swift; sourceTree = "<group>"; };
+		3482B4011BEB082C00B320EA /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		3482B4021BEB082C00B320EA /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		BCDBEBF21BB3800800841C20 /* SwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDBEBF51BB3800800841C20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCDBEBF71BB3800800841C20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3482B4031BEB082C00B320EA /* Nimble.framework in Frameworks */,
+				3482B4041BEB082C00B320EA /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +103,8 @@
 		BCDBEBE91BB3800800841C20 = {
 			isa = PBXGroup;
 			children = (
+				3482B4011BEB082C00B320EA /* Nimble.framework */,
+				3482B4021BEB082C00B320EA /* Quick.framework */,
 				BCDBEBF41BB3800800841C20 /* SwiftExample */,
 				BCDBEC091BB3800900841C20 /* SwiftExampleTests */,
 				BCDBEC141BB3800900841C20 /* SwiftExampleUITests */,
@@ -114,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				BCDBEC0C1BB3800900841C20 /* Info.plist */,
+				3482B3FF1BEB071000B320EA /* StreakSpec.swift */,
 				BCDBEC2B1BB3823F00841C20 /* HelloTests.swift */,
 			);
 			path = SwiftExampleTests;
@@ -155,6 +182,7 @@
 				BCDBEC021BB3800900841C20 /* Sources */,
 				BCDBEC031BB3800900841C20 /* Frameworks */,
 				BCDBEC041BB3800900841C20 /* Resources */,
+				3482B4051BEB084E00B320EA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -269,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3482B4001BEB071000B320EA /* StreakSpec.swift in Sources */,
 				BCDBEC2C1BB3823F00841C20 /* HelloTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +455,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExampleTests;
@@ -440,6 +473,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExampleTests;
