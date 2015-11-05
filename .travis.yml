@@ -1,4 +1,5 @@
 language: objective-c
+
 osx_image: xcode7.1
 
 cache:
@@ -15,9 +16,8 @@ install:
 script: ./test.sh
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash)
 
 env:
   global:
-  - secure: OXGdm6fIVOZPqwaaqYEP3thVnq/L0cDh/TJS1aG2sM5rM0wc7dkHnsepfS0zTR8JJ16q4iJnZhVrmpxnOvv2p4lJkufmwS9VG43izmIWy250/7OV19XpVCxrBjH3rEbA3nF1Wq4fxHHljZbObYAZIydW9EmGcv4p9yhcdYNm0nE=
-
+    secure: f3RJybJWoU+ACDCToooMhYidaQ0hXzWjszv8+oX7ZeOKvm2akrHbht/NpGvzw1lm6rQ7w6l/+4EQZHzH7p5v/0WSZr+tHQPLrjRSQumUmny0fMbjKEN0w3bGPDN5aUIgRTBSdNl2kByq6cyNirqmHn0A+03l7KHvj8l3qa0xwRkTwomfY0oCVojnFmc6lldYdWqZnoPZbwXIiB1jhcvBu4tB/Fd3F2A7C8brkVXnvSgVThb8UNGNJ4WvXdnw6C98prLNxd+01BZCK44sRifbALT4YnfK+2IM4fOl1A9I68olhFEPp2FYF0dbSMVNeGBvmNxc/2s+3W4IHE1vqNFQY7nasTp1kulNFEzrOsmudegLiSnCT7Bz8aAj4YIEaV4Nb72SC1f4b3UKj41BQd6iFh4WvbBxE9WrMUsdyf8c5HXhr7pQsaxEYyCOo5xLTE9Wvu0/c+4Idif9+IbfO3qap5buH+Tlu3kq0W92r6aEfQbCFJI7c0IGlRhzruoZjmgHNJaKlUjZvdJSob8znIEU8aG8C4m28C+v96kuON6OIDZSpudbWRXlsloy1cIuQtlbmPRr5/d3qVE5ex3fqgYLk2+9IDThY24wDATfFSmIJClLagkXl6UjwudIbWrhSnXRTAn8PE8uu1maAsO9VsEJw/H3dOZgfO2lswVd02C6pjo=
