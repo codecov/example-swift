@@ -13,14 +13,12 @@ class StreakSpec: QuickSpec {
     override func spec() {
 
         beforeEach{
-            
-            
         }
         
         describe("Class methods"){
             
             it("should find instance by type/from/to"){
-
+                
             }
             
         }

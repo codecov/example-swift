@@ -18,7 +18,6 @@
 		BCDBEBFD1BB3800800841C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDBEBFC1BB3800800841C20 /* Assets.xcassets */; };
 		BCDBEC001BB3800800841C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDBEBFE1BB3800800841C20 /* LaunchScreen.storyboard */; };
 		BCDBEC281BB380A300841C20 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC271BB380A300841C20 /* Hello.swift */; };
-		BCDBEC2C1BB3823F00841C20 /* HelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC2B1BB3823F00841C20 /* HelloTests.swift */; };
 		BCFE39A71BB3851C004C9856 /* SwiftExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFE39A61BB3851C004C9856 /* SwiftExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +68,6 @@
 		BCDBEC111BB3800900841C20 /* SwiftExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDBEC171BB3800900841C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCDBEC271BB380A300841C20 /* Hello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
-		BCDBEC2B1BB3823F00841C20 /* HelloTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloTests.swift; sourceTree = "<group>"; };
 		BCFE39A61BB3851C004C9856 /* SwiftExampleUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExampleUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +139,6 @@
 			children = (
 				BCDBEC0C1BB3800900841C20 /* Info.plist */,
 				3482B3FF1BEB071000B320EA /* StreakSpec.swift */,
-				BCDBEC2B1BB3823F00841C20 /* HelloTests.swift */,
 			);
 			path = SwiftExampleTests;
 			sourceTree = "<group>";
@@ -298,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3482B4001BEB071000B320EA /* StreakSpec.swift in Sources */,
-				BCDBEC2C1BB3823F00841C20 /* HelloTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
