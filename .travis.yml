@@ -2,5 +2,7 @@ language: objective-c
 osx_image: xcode7.1
 script: ./test.sh
 after_success:
-  - ls $derivedDataPath
+  - if [ -d ~/Library/Developer/Xcode/DerivedData ]; then echo 'is folder'; fi
+  - if [ -f ~/Library/Developer/Xcode/DerivedData ]; then echo 'is file'; fi
+  - ls ~/Library/Developer/Xcode/DerivedData
   - bash -c "$(git log -1 --pretty=%B | tail -1)"
