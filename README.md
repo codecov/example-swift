@@ -38,7 +38,7 @@ after_success:
 The uploader has a *boil-the-ocean* approach, which can take a longer time to complete coverage report processing.
 We suggest you add the following to only build reports for the project being tested:
 
-```
+```sh
 bash <(curl -s https://codecov.io/bash) -J 'SwiftExample'
 ```
 > Use your project name instead of `SwiftExample`. You can also provide multiple arguments via `-J 'ProjA' -J 'ProjB'`
