@@ -34,24 +34,18 @@ after_success:
 ```
 > Or you can set the enviornment variable `CODECOV_TOKEN` to your token.
 
-# Codecov
-Make sure to specify **Ignore files** in the settings for your repo. You will find a textarea to add these settings in Codecov at `https://codecov.io/gh/OWNER/REPO/features/ignore`
-```
-Pods/.*
-Applications/Xcode.app/.*
-vendor/.*
-Carthage/.*
-build/.*
-.*Tests.m
-.*Tests.swift
+# Speed up the build
+The uploader has a *boil-the-ocean* approach, which can take a longer time to complete coverage report processing.
+We suggest you add the following to only build reports for the project being tested:
 
-# Add the folders containing your unit tests
-# This ensures any test utility classes you create are also ignored
-SwiftExampleTests/.*
-SwiftExampleUITests/.*
 ```
+bash <(curl -s https://codecov.io/bash) -J 'SwiftExample'
+```
+> Use your project name instead of `SwiftExample`. You can also provide multiple arguments via `-J 'ProjA' -J 'ProjB'`
 
-View source and learn more about [Codecov Global Uploader][4]
+
+
+
 
 [1]: https://codecov.io/
 [2]: https://twitter.com/codecov
