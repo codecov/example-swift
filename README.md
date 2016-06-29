@@ -1,7 +1,7 @@
 Codecov Swift Example
 =====================
 
-[![Build Status](https://travis-ci.org/codecov/example-swift.svg)](https://travis-ci.org/codecov/example-swift) [![codecov.io](http://codecov.io/github/codecov/example-swift/coverage.svg?branch=master)](http://codecov.io/github/codecov/example-swift?branch=master)
+[![Build Status](https://travis-ci.org/codecov/example-swift.svg)](https://travis-ci.org/codecov/example-swift) [![codecov.io](https://codecov.io/gh/codecov/example-swift/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/example-swift/branch/master)
 
 | [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
 | ----------------------- | ------------- | --------------------- |
