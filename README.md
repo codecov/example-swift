@@ -44,9 +44,6 @@ bash <(curl -s https://codecov.io/bash) -J 'SwiftExample'
 > Use your project name instead of `SwiftExample`. You can also provide multiple arguments via `-J 'ProjA' -J 'ProjB'`
 
 
-
-
-
 [1]: https://codecov.io/
 [2]: https://twitter.com/codecov
 [3]: mailto:hello@codecov.io
