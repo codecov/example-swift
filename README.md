@@ -1,10 +1,7 @@
-Codecov Swift Example
-=====================
+[Codecov][1] Swift Example
+==========================
 
 [![Build Status](https://travis-ci.org/codecov/example-swift.svg)](https://travis-ci.org/codecov/example-swift) [![codecov.io](https://codecov.io/gh/codecov/example-swift/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/example-swift/branch/master)
-
-| [https://codecov.io][1] | [@codecov][2] | [hello@codecov.io][3] |
-| ----------------------- | ------------- | --------------------- |
 
 This repository serves as an **example** on how to use [Codecov Global][4] for Swift.
 
@@ -19,7 +16,8 @@ Add to your `.travis.yml` file.
 ```yml
 language: swift # or objective-c
 osx_image: xcode7
-script: ./test.sh
+script:
+  - xcodebuild -scheme SwiftExample -workspace SwiftExample.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
@@ -30,9 +28,9 @@ after_success:
 Add to your `.travis.yml` file.
 ```yml
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t :uuid-repo-token
+  - bash <(curl -s https://codecov.io/bash) -t uuid-repo-token
 ```
-> Or you can set the enviornment variable `CODECOV_TOKEN` to your token.
+> Or you can set the environment variable `CODECOV_TOKEN` to your token.
 
 # Speed up the build
 The uploader has a *boil-the-ocean* approach, which can take a longer time to complete coverage report processing.
@@ -43,8 +41,9 @@ bash <(curl -s https://codecov.io/bash) -J 'SwiftExample'
 ```
 > Use your project name instead of `SwiftExample`. You can also provide multiple arguments via `-J 'ProjA' -J 'ProjB'`
 
+----
+
+Have questions? Support at https://codecov.io/support
 
 [1]: https://codecov.io/
-[2]: https://twitter.com/codecov
-[3]: mailto:hello@codecov.io
 [4]: https://github.com/codecov/codecov-python
