@@ -41,6 +41,15 @@ bash <(curl -s https://codecov.io/bash) -J 'SwiftExample'
 ```
 > Use your project name instead of `SwiftExample`. You can also provide multiple arguments via `-J 'ProjA' -J 'ProjB'`
 
+# Caveats
+
+### Xcode8/Swift3 resulting in `0%` coverage.
+
+1. Update the test scheme with Xcode 8
+2. Do not use `xcpretty`. Seems broken with code coverage Xcode 8...
+
+Example project with Xcode8/Swift3: [yannickl/DynamicColor](https://github.com/yannickl/DynamicColor/blob/6ac768ba5c14941be5ebe169aca408655e185b20/.travis.yml)
+
 ----
 
 Have questions? Support at https://codecov.io/support
