@@ -12,9 +12,9 @@
 		BCDBEBFB1BB3800800841C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDBEBF91BB3800800841C20 /* Main.storyboard */; };
 		BCDBEBFD1BB3800800841C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDBEBFC1BB3800800841C20 /* Assets.xcassets */; };
 		BCDBEC001BB3800800841C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDBEBFE1BB3800800841C20 /* LaunchScreen.storyboard */; };
-		BCDBEC281BB380A300841C20 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC271BB380A300841C20 /* Hello.swift */; settings = {ASSET_TAGS = (); }; };
-		BCDBEC2C1BB3823F00841C20 /* HelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC2B1BB3823F00841C20 /* HelloTests.swift */; settings = {ASSET_TAGS = (); }; };
-		BCFE39A71BB3851C004C9856 /* SwiftExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFE39A61BB3851C004C9856 /* SwiftExampleUITests.swift */; settings = {ASSET_TAGS = (); }; };
+		BCDBEC281BB380A300841C20 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC271BB380A300841C20 /* Hello.swift */; };
+		BCDBEC2C1BB3823F00841C20 /* HelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBEC2B1BB3823F00841C20 /* HelloTests.swift */; };
+		BCFE39A71BB3851C004C9856 /* SwiftExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFE39A61BB3851C004C9856 /* SwiftExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,18 +191,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Codecov;
 				TargetAttributes = {
 					BCDBEBF11BB3800800841C20 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 					};
 					BCDBEC051BB3800900841C20 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 						TestTargetID = BCDBEBF11BB3800800841C20;
 					};
 					BCDBEC101BB3800900841C20 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 						TestTargetID = BCDBEBF11BB3800800841C20;
 					};
 				};
@@ -329,8 +332,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -374,8 +379,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -394,6 +401,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -407,6 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -418,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -431,6 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftExample.app/SwiftExample";
 			};
 			name = Debug;
@@ -444,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftExample.app/SwiftExample";
 			};
 			name = Release;
@@ -457,6 +469,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SwiftExample;
 				USES_XCTRUNNER = YES;
 			};
@@ -470,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.codecov.SwiftExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SwiftExample;
 				USES_XCTRUNNER = YES;
 			};

@@ -30,7 +30,7 @@ class SwiftExampleUITests: XCTestCase {
     
     func testExample() {
         // Use recording to get started writing UI tests.
-        XCTAssertTrue(XCUIApplication().childrenMatchingType(.Window).elementBoundByIndex(0).exists)
+        XCTAssertTrue(XCUIApplication().children(matching: .window).element(boundBy: 0).exists)
     }
     
 }
