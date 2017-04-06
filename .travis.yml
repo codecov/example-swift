@@ -3,4 +3,4 @@ osx_image: xcode7.1
 script:
   - xcodebuild -scheme SwiftExample -workspace SwiftExample.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
 after_success:
-  - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/3c3a0f9704a5b7820540b76edfbf502bed267ae3/codecov) -X xcode -X xcodeplist
+  - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/adcc50b0f6d319edde4e40237bca603869e31f3d/codecov) -X xcode -X xcodeplist
