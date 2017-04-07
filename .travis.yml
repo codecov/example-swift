@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode8.3
 script:
   - xcodebuild -scheme SwiftExample -workspace SwiftExample.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
-  - find . -name '*.xccoverage'
+  - find / -name '*.xccoverage'
   - find ~/Library/Developer/Xcode/DerivedData -name '*.xccoverage'
 after_success:
   - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/adcc50b0f6d319edde4e40237bca603869e31f3d/codecov) -X xcode -X xcodeplist
