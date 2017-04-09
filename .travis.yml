@@ -2,8 +2,5 @@ language: objective-c
 osx_image: xcode7.3
 script:
   - xcodebuild -scheme SwiftExample -workspace SwiftExample.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
-  - find ~/Library/Developer/Xcode/DerivedData -name '*.xccoverage' || echo 'ok'
-  - plutil -convert xml1 -o "coverage.plist" -- $(find ~/Library/Developer/Xcode/DerivedData -name '*.xccoverage' | head -1)
-  - cat coverage.plist
 after_success:
   - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/master/codecov) -X xcodeplist
