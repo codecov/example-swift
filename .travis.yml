@@ -5,4 +5,4 @@ script:
   - find / -name '*.xccoverage' || echo 'ok'
   - find ~/Library/Developer/Xcode/DerivedData -name '*.xccoverage' || echo 'ok'
 after_success:
-  - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/dbf2ec11c3cac2cf7a54f48a77ee6d7ab18043c1/codecov) -X xcode -X xcodeplist
+  - bash <(curl -s https://raw.githubusercontent.com/codecov/codecov-bash/master/codecov) -X xcode
