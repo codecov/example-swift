@@ -1,4 +1,5 @@
 
+
 [Codecov][1] Swift Example
 ==========================
 
@@ -21,7 +22,28 @@ Enable "Gather coverage data" in your test scheme:
 
 ![gather coverage data](docs/gather_coverage_data.png)
 
-## Private Repos
+#### Strategies for producing coverage reports
+
+##### plist coverage `default`
+This technique will upload the plist containing coverage data.
+- This format includes all files and projects. However, this can be very large causing issues processing.
+- Partial coverage data is included, which will look beautiful in Codecov UI.
+
+Again, this is enabled by default.
+
+##### llvm-cov
+This technique will run `llvm-cov` which produces coverage reports.
+- You can specify specific packages to run coverage against (see below)
+- No partial coverage data
+
+To enable:
+
+```
+bash <(curl -s https://codecov.io/bash) -X xcodellvm
+# - or -
+bash <(curl -s https://codecov.io/bash) -J '^MyPackage$'
+# ^^ will enable xcodellvm and only process MyPackage coverage
+```
 
 You may provide your Codecov token by either:
 
