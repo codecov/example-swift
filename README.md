@@ -23,14 +23,19 @@ after_success:
 ```
 
 ## Private Repos
-> Set `CODECOV_TOKEN` in your environment variables.
 
-Add to your `.travis.yml` file.
+You may provide your Codecov token by either:
+
+- Setting `CODECOV_TOKEN` in your environment variables and adding the following to Travis:
 ```yml
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t uuid-repo-token
+  - bash <(curl -s https://codecov.io/bash)
 ```
-> Or you can set the environment variable `CODECOV_TOKEN` to your token.
+- Providing the Codecov token directly to the invocation by adding the following to Travis:
+```yml
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t {YOUR-TOKEN-HERE}
+```
 
 # Speed up the build
 The uploader has a *boil-the-ocean* approach, which can take a longer time to complete coverage report processing.
