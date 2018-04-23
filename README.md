@@ -22,6 +22,15 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 ```
 
+# Bitrise CI
+
+1. Open dashboard.
+2. Click on workflow
+3. Add a workflow step
+4. Search for `Codecov`
+5. Paste the `Codecov Token`
+6. You are all set
+
 ## Private Repos
 > Set `CODECOV_TOKEN` in your environment variables.
 
