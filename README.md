@@ -52,7 +52,7 @@ Example project with Xcode8/Swift3: [yannickl/DynamicColor](https://github.com/y
 
 ----
 
-Have questions? Support at https://codecov.io/support
+We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
 
 [1]: https://codecov.io/
 [4]: https://github.com/codecov/codecov-python
