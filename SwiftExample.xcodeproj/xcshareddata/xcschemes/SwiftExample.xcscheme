@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCDBEBF11BB3800800841C20"
+               BlueprintIdentifier = "AB14C80B222091740001DC36"
                BuildableName = "SwiftExample.app"
                BlueprintName = "SwiftExample"
                ReferencedContainer = "container:SwiftExample.xcodeproj">
@@ -26,26 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      codeCoverageEnabled = "YES"
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCDBEC051BB3800900841C20"
+               BlueprintIdentifier = "AB14C81F222091760001DC36"
                BuildableName = "SwiftExampleTests.xctest"
                BlueprintName = "SwiftExampleTests"
-               ReferencedContainer = "container:SwiftExample.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCDBEC101BB3800900841C20"
-               BuildableName = "SwiftExampleUITests.xctest"
-               BlueprintName = "SwiftExampleUITests"
                ReferencedContainer = "container:SwiftExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -53,7 +43,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BCDBEBF11BB3800800841C20"
+            BlueprintIdentifier = "AB14C80B222091740001DC36"
             BuildableName = "SwiftExample.app"
             BlueprintName = "SwiftExample"
             ReferencedContainer = "container:SwiftExample.xcodeproj">
@@ -76,7 +66,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BCDBEBF11BB3800800841C20"
+            BlueprintIdentifier = "AB14C80B222091740001DC36"
             BuildableName = "SwiftExample.app"
             BlueprintName = "SwiftExample"
             ReferencedContainer = "container:SwiftExample.xcodeproj">
@@ -95,7 +85,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BCDBEBF11BB3800800841C20"
+            BlueprintIdentifier = "AB14C80B222091740001DC36"
             BuildableName = "SwiftExample.app"
             BlueprintName = "SwiftExample"
             ReferencedContainer = "container:SwiftExample.xcodeproj">
