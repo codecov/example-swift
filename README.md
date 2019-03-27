@@ -85,6 +85,10 @@ after_success:
 
 Example project with Xcode8/Swift3: [yannickl/DynamicColor](https://github.com/yannickl/DynamicColor/blob/6ac768ba5c14941be5ebe169aca408655e185b20/.travis.yml)
 
+### Parsing Xcode 10 Coverage Reports
+
+Older versions of Codecov (<4.4) are not able to parse the coverage output directly from Xcode 10. As a workaround, you can feed the raw coverage information to a tool such as Slather, have it create a Cobertura XML style report, and upload that to Codecov. Detailed information on this workaround can be found (here)[https://github.com/SlatherOrg/slather#usage-with-codecov].
+
 ## Support
 ### Contact
 - Email: support@codecov.io
