@@ -21,7 +21,7 @@ after_success:
 Enable "Gather coverage data" in your test scheme:
 ![gather coverage data](docs/gather_coverage_data.png)
 
-# Bitrise CI
+### Bitrise CI
 
 1. Open dashboard.
 2. Click on workflow
