@@ -19,8 +19,19 @@ after_success:
 ```
 ### Produce Coverage Reports
 Enable "Gather coverage data" in your test scheme:
-
 ![gather coverage data](docs/gather_coverage_data.png)
+
+### Bitrise CI
+
+1. Open dashboard.
+2. Click on workflow
+3. Add a workflow step
+4. Search for `Codecov`
+5. Paste the `Codecov Token`
+6. You are all set
+
+## Private Repos
+> Set `CODECOV_TOKEN` in your environment variables.
 
 #### Strategies for producing coverage reports
 
