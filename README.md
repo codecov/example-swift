@@ -1,9 +1,8 @@
-
-
 [Codecov][1] Swift Example
 ==========================
 
 [![Build Status](https://travis-ci.org/codecov/example-swift.svg)](https://travis-ci.org/codecov/example-swift) [![codecov.io](https://codecov.io/gh/codecov/example-swift/branch/master/graphs/badge.svg)](https://codecov.io/gh/codecov/example-swift/branch/master)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-swift.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-swift?ref=badge_shield)
 
 ## Guide
 ### Travis Setup
@@ -114,3 +113,7 @@ We are happy to help if you have any questions. Please contact email our Support
 
 [1]: https://codecov.io/
 [4]: https://github.com/codecov/codecov-python
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-swift.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-swift?ref=badge_large)
